@@ -1,19 +1,17 @@
 function calcular(){
-let nub1 = 2
-let nub2 = 2
-let guarda = window.prompt(`qual o resultado de ${nub1} + ${nub2}`)
+let nub = 1
 
-               if(guarda == 4 ){
-                
-                guarda = soamr()
-                 
-               }else {window.alert('burro')
+let res = window.prompt(`qual é o resultado de ${nub} + ${nub} `)
 
-               }
-}  
+if( res !=  2 ){
+window.alert ('erro')
+}     else(
+      sequencia()
+)
+}
 
-function somar(){
-      while(true){
-      let soma = guarda += guarda
-      window.prompt(`quanto é ${guarda}+${guarda}` )
-}}
+function sequencia (){
+      for(let  res = 1; res = 2; res *2){
+            window.prompt(`resultado de ${res} + ${res}`)
+      }
+}
