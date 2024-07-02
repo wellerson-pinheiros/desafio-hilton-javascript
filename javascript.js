@@ -3,7 +3,7 @@ let nub = 1
 
 let res = window.prompt(`qual é o resultado de ${nub} + ${nub} `)
 
-if( res !=  2 ){
+if( parseInt(res) !==  2 ){
 window.alert ('erro')
 }     else(
       sequencia()
@@ -11,7 +11,14 @@ window.alert ('erro')
 }
 
 function sequencia (){
-      for(let  res = 1; res = 2; res *2){
-            window.prompt(`resultado de ${res} + ${res}`)
-      }
+      for(res = 2; res < 1000; res = res + res){
+          let respostausuario = window.prompt(`qual o resultado de ${res} + ${res}`) 
+             let usuarioresposta = parseInt(respostausuario)
+            if(respostausuario != res + res){
+                  window.alert('erro, tente denovo')
+
+            }break;
 }
+
+}
+calcular()
